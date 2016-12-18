@@ -266,7 +266,7 @@ void server_process(void)
         }
         /* if not server socket , this socket is for client socket, so we read it */
         if((nfds >= 20) && (isFirst == 1)){
-            userpool_send("@");
+            userpool_send("$");
             isFirst = 0;
         }
         
